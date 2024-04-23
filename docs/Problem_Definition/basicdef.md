@@ -12,7 +12,7 @@ nav_order: 1
 We start by introducing the times and physical resources involved in the
 problem:
 * **Scheduling period:** The scheduling period is defined as a number $$D$$ of
-  consecutive days; $$D$$ is always a multiple of seven, and it varies
+  consecutive days; $D$ is always a multiple of seven, and it varies
   between 14 (two weeks) and 28 (four weeks).
 * **Shifts:** We assume a fixed structure of working shift types for
   nurses, with three shifts per day, called _early_, _late_, and _night_.
