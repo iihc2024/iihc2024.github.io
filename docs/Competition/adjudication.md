@@ -24,7 +24,7 @@ by the other participants for that instance.
  
 The matrix $$X$$ of results is transformed into a matrix of ranks $$R$$
 assigning to each $$R_{ij}$$ a value from $$1$$ to $$k$$. That is, for
-instance $$j$$ the supplied $$X_{1j}$$, $$X_{2j}$$, \ldots ,$$X_{kj}$$ are
+instance $$j$$ the supplied $$X_{1j}$$, $$X_{2j}$$, $$\ldots$$ ,$$X_{kj}$$ are
 compared with each other and rank $$1$$ is assigned to the smallest
 observed value, rank $$2$$ to the second smallest, and so on to 
 rank $$k$$, which is assigned to the largest value for instance $$j$$.
@@ -37,4 +37,6 @@ assigned rank $$k$$ for the corresponding instance, in which k is the total
 number of participating solution methods.
  
 Consider the example with $$m=6$$ instances and $$k=7$$ participants in
-Table TODO. Table TODO shows the ranks. 
+Table TODO.
+
+Table TODO shows the ranks. 
