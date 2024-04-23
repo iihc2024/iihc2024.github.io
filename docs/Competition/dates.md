@@ -1,11 +1,14 @@
 ---
 layout: default
 title: Dates
-parent: Competition
-nav_order: 5
+parent: Competition setting
+nav_order: 2
 ---
 
-**Summer 2024**: Competition presentation at different conferences including [PATAT 2024](https://patatconference2024.dtu.dk/)
+## Timeline
+
+
+**Spring/Summer 2024**: Competition presentation at different conferences including [PATAT 2024](https://patatconference2024.dtu.dk/)
 and [ORAHS 2024](https://orahs2024.di.unito.it/) .
 
 **September 1, 2024**: Competition start. On this date, we will

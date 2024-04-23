@@ -1,7 +1,7 @@
 ---
 layout: default
 title: About
-nav_order: 3
+nav_order: 6
 ---
 
 [IOLAB Uniud](https://iolab.uniud.it/)

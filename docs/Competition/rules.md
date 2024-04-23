@@ -1,9 +1,12 @@
 ---
 layout: default
 title: Rules
-parent: Competition
-nav_order: 4
+parent: Competition setting
+nav_order: 1
 ---
+
+<!-- TODO: added clarification on rule 3 -->
+
 This competition seeks to encourage research into automated timetabling and scheduling methods for solving an integrated healthcare problem,
 and to offer prizes to the most successful methods.  With any set of
 rules for any competition it is possible to work within the letter of
@@ -11,8 +14,8 @@ these rules but outside their spirit.
 Therefore, the spirit of the following rules is important.
 
 
-**Rule 1**: The organisers reserve the right to update the
-  rules at any time, if they believe it is necessary for the sake of
+**Rule 1**: <u>The organisers reserve the right to update the
+  rules at any time</u>, if they believe it is necessary for the sake of
   preserving the correct operation of the competition. Any change of
   rules will be notified in the repository.
 
@@ -20,7 +23,7 @@ Therefore, the spirit of the following rules is important.
   submissions must be uploaded. These deadlines are strict and no
   extensions will be given under any circumstances.
 
-**Rule 3**:Participants may use any programming
+**Rule 3**: Participants may use any programming
   language. The use of third-party software is allowed under the
   following restrictions:
    * it is free software;
@@ -48,11 +51,10 @@ Therefore, the spirit of the following rules is important.
   scores on the provided instances. The actual list will be based
   on the ranks of solution methods on each single instance. The mean average of
   the ranks will produce the final place list. Section
-  (TODO:Add Adjudication page) provides more details on how the
+  [Adjudication](adjudication) provides more details on how the
   orderings will be established.
 
-**Rule 8**:
-The finalists' solution methods will be rerun by the organizers on the hidden dataset using 
+**Rule 8**: The finalists' solution methods will be rerun by the organizers on the hidden dataset using 
 the same timeout specified in **Rule 4**. The official PC will be a _AMD Ryzen Threadripper PRO 3975WX, 3.50 GHz,
 running Ubuntu Linux 22.4_. A different operating environment might be used in exceptional cases if 
 strictly necessary.  It is the responsibility of the participant to ensure that all files and 
@@ -60,5 +62,5 @@ information are provided to enable the organizers to run their code.
   
 **Rule 9**: Finalists' eventual place listings will be
   based on the ranks on each single instance for a set of trials on
-  all instances. As with **Rule 7**, Section (TODO:Add Adjudication page) provides an explanation 
+  all instances. As with **Rule 7**, Section [Adjudication](adjudication) provides an explanation 
   of the procedures to be used.

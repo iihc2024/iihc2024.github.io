@@ -1,6 +1,7 @@
 title: International Integrated <br> Healthcare Competition <br> 2024
-description: A site which hopefully will load
+description: iihc2024
 theme: just-the-docs
+#remote_theme: just-the-docs/just-the-docs
 
 url: https://iihc2024.github.io
 color_scheme: iihc
@@ -9,3 +10,13 @@ search_enabled: false
 
 aux_links:
   IIHC on Github: https://github.com/iihc2024/iihc2024.github.io
+
+markdown: kramdown
+
+callouts:
+  warning:
+    title: Warning
+    color: red
+  note:
+    title: Note
+    color: yellow
