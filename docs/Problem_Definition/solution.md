@@ -9,17 +9,20 @@ nav_order: 2
 <!-- TODO: Correct citations, streamline description of the problem -->
 
 ## Solution
-The solution of an instance of IHSP consists of making the following decisions:
+The solution of an instance of the Integrated Healthcare Scheduling Problem (IHSP) consists of making the following decisions:
 
-1. the admission date in the hospital for patients, or, only for optional patients, the postponement to the next scheduling period; 
-2. the allocation of a room to admitted patients;
-3. the assignment of a single nurse to each occupied room, for each shift within the scheduling period; 
-4. the assignment of surgeries of patients to operating theaters, for each day of the scheduling period.
+1. the admission date for patients, or, only for optional patients, the postponement to the next scheduling period; 
+2. the assignment of admitted patients to operating theaters on their selected admission date;
+3. the allocation of a room to admitted patients for the entirety of their length of stay (LOS) <!--length of their stay-->;
+4. the assignment of a single nurse to each occupied room, for each shift within the scheduling period.
 
-We assume that patients are always admitted and discharged after the night shift and before the early shift. 
+In addition, the solution is constructed taking into account the following assumptions:
 
-Note that we assign a patient to a single room for their entire length of stay, and so we assume that a patient cannot be transferred from one room to another during their stay.
+- Patients are always admitted and discharged after the night shift and before the early shift.
+- Patients cannot be moved from one room to another during their stay; so, each patient must be assigned to a single room for the entire LOS <!--length of their stay-->.
+- All patients undergo surgery on the admission day.
+- The surgeon for each patient is predetermined, i.e. the choice of admission day automatically determines the surgeon's duty. However, the operating theater must be chosen.
+- When assigning patients to theaters, the exact time of the operation is not taken into account; only the date is taken into account, assuming that the duration of all operations does not exceed the availability of the theater.
+- Is only necessary to assign nurses to a room on a given day if the room accomodates patients on that day.  Nonetheless, assigning nurses to empty rooms would be acceptable and bring no additional costs (see [Constraints](./constraints)).
 
-We also assume that all patients undergo surgery, and this happens on the admission day. In addition, the surgeon of a patient is fixed, and so the selection of the admission day automatically determines the duty of the surgeon. On the contrary, the operating theater must be selected. Such assignment, however, does not include the precise operating time, but only the date, assuming that the order of the operations in the operating theater is decided at a lower level of detail.
 
-Finally, note that it is only necessary to assign nurses to a room on a given day if the room contains patients on that day.  Nonetheless, assigning nurses to empty rooms would be acceptable and bring no additional costs (see [Constraints](./constraints)).

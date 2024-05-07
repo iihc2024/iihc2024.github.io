@@ -6,7 +6,10 @@ nav_order: 2
 ---
 <!--TODO: expand the explanation of the .json output file (e.g. syntax patient is not admitted, nurse is not assigned to any room etc., add warning about data types)-->
 
-The solution file format is divided into two sections: one about patients and one about nurses. The following fragment illustrates both sections.
+The solution file format is divided into two sections: one about patients and one about nurses. 
+
+The patient section comprises of the list of admitted patients. For each admitted patient it's necessary to state their ```id``` their ```admission_day``` as well as the ids representing the ```room``` and ```operating theater``` they have been assigned to.
+Non-admitted patients can be either omitted from the solution or be added to the list as shown below.
 
 ```js
 {
@@ -17,7 +20,7 @@ The solution file format is divided into two sections: one about patients and on
       "room": "r3",
       "operating_theater": "t0"
     },
-    ...
+    //other patients
     ],
   "nurses": [
     {
@@ -33,10 +36,15 @@ The solution file format is divided into two sections: one about patients and on
           "shift": "night",
           "rooms": ["r4", "r5"]
         },
-        ...
+        {
+          "day": 2,
+          "shift": "night",
+          "rooms": [ ]
+        },
+        //other working shifts
         ]
     },
-    ...
+    //other nurses
     ]
 }
 ```
