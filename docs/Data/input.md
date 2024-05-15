@@ -7,7 +7,7 @@ nav_order: 1
 ---
 <!--TODO: Expand explanation of .json input, use toy instance, add link to allow download of entire toy instance-->
 
-The input file contains a header part in addition to separate sections for occupants, patients, nurses,  surgeons, operating theaters and rooms.
+The input file contains a header part in addition to separate sections for occupants, patients, nurses, surgeons, operating theaters and rooms.
 
 ## Header
 The header contains the length of the the basic data as well as the cost components instance-specific weights.
@@ -139,7 +139,7 @@ The nurses section comprises a list of individual nurses, each with their unique
 
 To each surgeon is assigned an ```id``` and a ```max_surgery_time``` list specifying their availability (in minutes) on each day of the scheduling period. 
 
-Similarly, each operating theater is  is identified by an ```id``` accompanied by an ```availability```list indicating the theater's availability (in minutes) for each day of the scheduling period.
+Similarly, each operating theater is identified by an ```id``` accompanied by an ```availability```list indicating the theater's availability (in minutes) for each day of the scheduling period.
 
 Finally, to each room is associated an ```id``` and a ```capacity``` (constant during the entire scheduling period).
 

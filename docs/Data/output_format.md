@@ -21,6 +21,11 @@ Non-admitted patients can be either omitted from the solution or be added to the
       "operating_theater": "t0"
     },
     //other patients
+    {
+      "id": "p02",
+      "admission_day": "none"
+    },
+    //remaining patients
     ],
   "nurses": [
     {
@@ -39,7 +44,7 @@ Non-admitted patients can be either omitted from the solution or be added to the
         {
           "day": 2,
           "shift": "night",
-          "rooms": [ ]
+          "rooms": []
         },
         //other working shifts
         ]

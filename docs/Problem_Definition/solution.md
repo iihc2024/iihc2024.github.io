@@ -18,7 +18,6 @@ The solution of an instance of the Integrated Healthcare Scheduling Problem (IHS
 
 In addition, the solution is constructed taking into account the following assumptions:
 
-- Patients are always admitted and discharged after the night shift and before the early shift.
 - Patients cannot be moved from one room to another during their stay; so, each patient must be assigned to a single room for the entire LOS <!--length of their stay-->.
 - All patients undergo surgery on the admission day.
 - The surgeon for each patient is predetermined, i.e. the choice of admission day automatically determines the surgeon's duty. However, the operating theater must be chosen.

@@ -11,6 +11,9 @@ nav_order: 1
 ## Resources
 We start by introducing the times and physical resources involved in the
 problem:
+
+<!--- 
+  OLD VERSION LIST
 * **Scheduling period:** The scheduling period is defined as a number $$D$$ of
   consecutive days; $$D$$ is always a multiple of seven, and it varies
   between 14 and 28 days.
@@ -25,9 +28,41 @@ problem:
   during their recovery. Rooms are characterized by their capacity,
   expressed in terms of number of beds. Some rooms
   might be declared unsuitable for some specific patients.
-
+  -->
+<dl>
+  <dt><b>Scheduling period</b></dt>
+  <dd>The scheduling period is defined as a number $D$ of consecutive days; $D$ is always a multiple of seven, and it varies between 14 and 28 days.</dd>
+  <dt><b>Shifts</b></dt>
+  <dd>We assume a fixed structure of working shift types for
+  nurses, with three shifts per day, called <i>early</i>, <i>late</i>, and <i>night</i>.
+  Therefore, there is a total of $3D$ shifts in the scheduling period.</dd>
+  <dt><b>Operating Theaters</b></dt>
+  <dd>All operating theaters are identical, and thus suitable for 
+  accommodating all the different surgeries. Each theater has, for each day
+  in the scheduling period, a maximum usage expressed in minutes. When theaters are unavailable
+  on specific days, their maximum usage will be 0 minutes.</dd>
+  <dt><b>Rooms</b></dt>
+  <dd>Rooms host the patients
+  during their recovery. Rooms are characterized by their capacity,
+  expressed in terms of number of beds. Some rooms
+  might be declared unsuitable for some specific patients.</dd>
+</dl>
 Next, we describe the human resources:
-
+<dl>
+<dt><b>Nurses</b></dt>
+<dd>Each nurse has a skill level, which is an integer that
+  goes from 0 (lowest) to $L-1$ (highest), where $L$ is the number of levels. Furthermore,
+  each nurse has a predetermined roster, which is expressed as the set
+  of shifts in which the nurse works. Each shift is an integer between
+  0 and $3D - 1$. Finally, for each working shift, the nurse has a
+  maximum workload that he/she can take in that shift.</dd>
+<dt><b>Surgeons</b></dt>
+<dd>Each surgeon and their team has a maximum operating time for each
+  day. The time is set to 0 when the surgeon is not available. The team is assumed as an atomic
+  indivisible resource (called surgeon for simplicity).</dd>
+</dl>
+<!--- 
+  OLD VERSION LIST
 * **Nurses:** Each nurse has a skill level, which is an integer that
   goes from 0 (lowest) to $$L-1$$ (highest), where $$L$$ is the number of levels. Furthermore,
   each nurse has a predetermined roster, which is expressed as the set
@@ -37,6 +72,7 @@ Next, we describe the human resources:
 * **Surgeons:**  Each surgeon and their team has a maximum operating time for each
   day. The time is set to 0 when the surgeon is not available. The team is assumed as an atomic
   indivisible resource (called surgeon for simplicity). 
+  -->
 
 Note that the maximum workload of a nurse is shift-dependent, as they 
 can be employed in auxiliary duties during some specific working
@@ -47,21 +83,21 @@ shifts, which might reduce their availability.  Also note that we consider the _
 The central entity of the problem is the patient. For each patient, we
 have the following relevant information:
 
-* _mandatory/optional_: mandatory patients must be admitted during the scheduling period, while the admission of optional patients can be postponed;
-* _release date_: earliest possible admission date for the patient;
-* _due date_: latest possible admission date, provided only for mandatory patients;
-* _age group (category)_: a patient belongs to an age group (e.g.,~infant, youth, adult, elder); the list of age groups is fully ordered;
-* _gender_: each patient belongs to a gender group (e.g. man/woman);
-* _length of stay_: duration of the hospitalization in days;
-* _incompatible rooms_: set of rooms that cannot be allocated to the
+* **mandatory/optional**: mandatory patients must be admitted during the scheduling period, while the admission of optional patients can be postponed;
+* **release date**: earliest possible admission date for the patient;
+* **due date**: latest possible admission date, provided only for mandatory patients;
+* **age group (category)**: a patient belongs to an age group (e.g.,~infant, youth, adult, elder); the list of age groups is fully ordered;
+* **gender**: each patient belongs to a gender group (e.g. Gender A, Gender B);
+* **length of stay**: duration of the hospitalization in days;
+* **incompatible rooms**: set of rooms that cannot be allocated to the
   patient because they do not have the specific equipment or the
   necessary isolation;
-* _surgeon_: each patient needs a surgery with an expected duration
+* **surgeon**: each patient needs a surgery with an expected duration
   that will be performed by a pre-assigned surgeon; 
   we assume that surgery day and admission day always coincide;
-* _generated workload_: the workload profile generated by a patient is described by a vector that starts from the early shift of the admission day and ends by the night shift on the discharge day; 
+* **generated workload**: the workload profile generated by a patient is described by a vector that starts from the early shift of the admission day and ends by the night shift on the discharge day; 
 the length of the vector is 3 times his/her length of stay;
-* _minimum skill level_: this is another vector of length 3 times the length of stay of the patient. It represents the minimum skill level of the nurse, required by the patient in each shift/day.
+* **minimum skill level**: this is another vector of length 3 times the length of stay of the patient. It represents the minimum skill level of the nurse, required by the patient in each shift/day.
 
 In this formulation, it is assumed that each patient's admission and discharge occur after the night shift and before the early shift. Consequently, the patient's hospital stay commences with the early shift on their admission day.
 

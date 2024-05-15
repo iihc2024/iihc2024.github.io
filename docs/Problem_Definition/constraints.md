@@ -28,7 +28,7 @@ are multiplied by weight ($$W_i$$), which is not fixed but may vary across the d
 
 ### Constraints on Nurse-to-Room Assignment
 
-While the IHSP does not explicitly require the assignment of nurses to patients, the combination of patient-to-room assignments and nurse-to-room assignments determines which nurses are responsible for which patients. The following constraints **S2**, **S3**, and **S4**) depend on the resulting nurse-patient assignment.
+While the IHSP does not explicitly require the assignment of nurses to patients, the combination of patient-to-room assignments and nurse-to-room assignments determines which nurses are responsible for which patients. The following constraints (**S2**, **S3**, and **S4**) depend on the resulting nurse-patient assignment.
 * **S2** Minimum skill level: 
       A nurse must have a minimum skill level to provide the required care for a patient during each shift of their stay.
       As a consequence, if the skill level of the nurse assigned to their room in a shift is inferior to the minimum level required by the patient, the penalty is equal to the difference between the two skill levels.
