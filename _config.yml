@@ -13,6 +13,10 @@ aux_links:
 
 markdown: kramdown
 
+collections:
+  data:
+    output: false
+
 callouts:
   warning:
     title: Warning

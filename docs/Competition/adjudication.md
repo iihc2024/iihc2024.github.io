@@ -40,7 +40,7 @@ number of participating solution methods.
  
 Consider the following example with $$m=6$$ instances and $$k=7$$ participants.
 
-Assumen these are the scores of the submitted solutions: 
+Assume these are the scores of the submitted solutions: 
 
 | Instance | 1 | 2 | 3 | 4 | 5 | 6 |
 |---|---|---|---|---|---|---|
@@ -52,7 +52,7 @@ Assumen these are the scores of the submitted solutions:
 | Method 6 | 68 | 29 | 41 | 55 | 10 | 5 |
 | Method 7 | 36 | 30 | 43 | 58 | 10 | 4 |
 
-The corresponding solutions ranking is this:
+Hence the corresponding solutions ranking is this:
 
 | Instance | 1 | 2 | 3 | 4 | 5 | 6 |
 |---|---|---|---|---|---|---|
@@ -65,8 +65,9 @@ The corresponding solutions ranking is this:
 | Method 7 | 4.5 | 3.5 | 4.5 | 7 | 3.5 | 1.5 |
 
 For each solution method we compute the mean of the ranks. The finalists of the
-competition will be the 5 solution methods with the lowest mean ranks. In case of
-a tie for the last qualifying position, all solution methods with equal mean ranks
+competition will be the 5 solution methods with the lowest mean ranks.
+
+In case of a tie for the last qualifying position, all solution methods with equal mean ranks
 will be included, potentially resulting in more than 5 finalists.
 
 The following Table shows the mean ranks of the example: 

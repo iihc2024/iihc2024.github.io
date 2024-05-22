@@ -23,3 +23,6 @@ The solution needs to be provided in a single JSON file, and its format is descr
 > Dataset will the be made available on the 1st of September (starting date of the competition)
 
 ### Test dataset
+
+{:.warning}
+> Available ASAP

@@ -9,7 +9,7 @@ nav_order: 2
 The solution file format is divided into two sections: one about patients and one about nurses. 
 
 The patient section comprises of the list of admitted patients. For each admitted patient it's necessary to state their ```id``` their ```admission_day``` as well as the ids representing the ```room``` and ```operating theater``` they have been assigned to.
-Non-admitted patients can be either omitted from the solution or be added to the list as shown below.
+Non-admitted patients can be either omitted from the solution or be present with the syntax shown in the example.
 
 ```js
 {

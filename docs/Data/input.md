@@ -53,7 +53,7 @@ Additionally, each occupant is linked to a ```room_id```, specifying their assig
  "occupants": [
     {
       "id": "a0",
-      "gender": "male",
+      "gender": "A",
       "age_group": "elderly",
       "length_of_stay": 2,
       "workload_produced": [2, 1, 1, 2, 3, 2],
@@ -78,7 +78,7 @@ Additionally, each patient is accompanied by a list of ```incompatible_room_ids`
     {
       "id": "p0",
       "mandatory": false,
-      "gender": "female",
+      "gender": "B",
       "age_group": "elderly",
       "length_of_stay": 3,
       "surgery_release_day": 3,
@@ -94,7 +94,7 @@ Additionally, each patient is accompanied by a list of ```incompatible_room_ids`
     {
       "id": "p5",
       "mandatory": true,
-      "gender": "male",
+      "gender": "A",
       "age_group": "adult",
       "length_of_stay": 2,
       "surgery_release_day": 1,

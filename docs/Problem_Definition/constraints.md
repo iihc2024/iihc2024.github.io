@@ -18,7 +18,7 @@ and the last set relates to the integration of the problems.
 In addition, the constraint set is also split into hard (starting with **H**) and soft
 constraints (starting with **S**).  The former must always be
 satisfied, while violations of the latter contribute to the objective function. Violations of soft constraint **S**$$_i$$
-are multiplied by weight ($$W_i$$), which is not fixed but may vary across the different instances (for details see [Data Format](../Data/input) ).
+are multiplied by weight ($$W_i$$), which is not fixed but may vary across the different instances (for details see [Data Format](../Data/input)).
 
 ### Constraints on Patient Admission Scheduling
 
