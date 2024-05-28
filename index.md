@@ -4,9 +4,11 @@ layout: default
 nav_exclude: true
 ---
 
-We propose a new competition for optimization methods, called the International Integrated Healthcare Competition, that intends to stimulate research focusing on the specifics of integrated scheduling problems in healthcare.
+The Integrated Healthcare Timetabling Competition intends to stimulate research focusing on the challenges of integrated optimization problems.
 
 Here we provide all the information needed to participate in the
-competition, which will begin in September 2024 and will finish in March 2025. 
+competition. 
+
+Competition period: <u>1st September 2024</u> till <u>31 March 2025</u>. 
 
 

@@ -7,13 +7,9 @@ nav_order: 1
 ---
 <!--TODO: Expand explanation of .json input, use toy instance, add link to allow download of entire toy instance-->
 
-The input file contains a header part in addition to separate sections for occupants, patients, nurses, surgeons, operating theaters and rooms.
-
 ## Header
-The header contains the length of the the basic data as well as the cost components instance-specific weights.
-<!--Below is an example of the header part, containing the general data and the weights of the cost components.-->
 
-The header section specifies some general information such the total number of ```days``` in the scheduling period, the number of different nurses ```skill levels```, the list of types of daily shifts ```shift_types```, the enumeration of different ```age groups``` considered in the scheduling as well as the instance-specific weight associated to each of the cost components.
+The header section specifies some general information such the total number of ```days``` in the scheduling period, the number of different nurses ```skill levels```, the list of types of daily shifts ```shift_types```, the enumeration of different ```age groups``` considered in the scheduling and the instance-specific weight set.
 
 ```js
 {
@@ -65,9 +61,9 @@ Additionally, each occupant is linked to a ```room_id```, specifying their assig
 ```
 ## Patients
 
-As observed in the previous section for occupants, each patient is identified by an ```id```, assigned a ```gender``` group, an ```age_group```, and their ```length_of_stay``` in the hospital. Information regarding the ```workload_produced```, and the ```skill_level_required``` for each shift of their stay is also provided.
+Each patient, as per occupant, is identified by an ```id```, assigned a ```gender``` group, an ```age_group```, and their ```length_of_stay``` in the hospital. Information regarding the ```workload_produced```, and the ```skill_level_required``` for each shift of their stay is also provided.
 
-However, the patient section includes additional details pertaining to scheduled surgeries.
+The patient section includes additional details pertaining to scheduled surgeries.
 The ``` "mandatory" ``` field denotes whether a patient is required to be scheduled must be scheduled within the given period, while ```surgery_release_day``` indicates the earliest day for surgery (and hospital admission).
 For mandatory patients, the field ```surgery_due_day``` signifies the latest possible surgery date, while optional patients do not have this attribute. Further surgery details include the ```surgery_duration``` (in minutes) and the pre-assigned surgeon surgeon (```surgeon_id```).
 
@@ -137,7 +133,7 @@ The nurses section comprises a list of individual nurses, each with their unique
 
 ## Surgeons, OT and Rooms
 
-To each surgeon is assigned an ```id``` and a ```max_surgery_time``` list specifying their availability (in minutes) on each day of the scheduling period. 
+Each surgeon has an ```id``` and a ```max_surgery_time``` list specifying their availability (in minutes) on each day of the scheduling period. 
 
 Similarly, each operating theater is identified by an ```id``` accompanied by an ```availability```list indicating the theater's availability (in minutes) for each day of the scheduling period.
 

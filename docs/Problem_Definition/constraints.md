@@ -10,25 +10,20 @@ nav_order: 3
 
 ## Constraints
 
-We split the constraints into
-four sets: the first set relates to the PAS problem,
-the second relates to the NRA problem,
-the third relates to the SCP problem, 
-and the last set relates to the integration of the problems.  
-In addition, the constraint set is also split into hard (starting with **H**) and soft
+The constraint set is also split into hard (starting with **H**) and soft
 constraints (starting with **S**).  The former must always be
 satisfied, while violations of the latter contribute to the objective function. Violations of soft constraint **S**$$_i$$
 are multiplied by weight ($$W_i$$), which is not fixed but may vary across the different instances (for details see [Data Format](../Data/input)).
 
 ### Constraints on Patient Admission Scheduling
 
-* **H1** No gender mix: Patients of different genders may not share a room on any day.
+* **H1** No gender mix: Patients of different gender group may not share a room on any day.
 * **H2** Compatible rooms: Patients can only be assigned to one of their compatible rooms.
 * **S1** Age groups: For each day of the scheduling period and for each room, the maximum difference between age groups of patients sharing the room should be minimized. 
 
 ### Constraints on Nurse-to-Room Assignment
 
-While the IHSP does not explicitly require the assignment of nurses to patients, the combination of patient-to-room assignments and nurse-to-room assignments determines which nurses are responsible for which patients. The following constraints (**S2**, **S3**, and **S4**) depend on the resulting nurse-patient assignment.
+While the IHTP does not explicitly require the assignment of nurses to patients, the combination of patient-to-room assignments and nurse-to-room assignments determines which nurses are responsible for which patients. The following constraints (**S2**, **S3**, and **S4**) depend on the resulting nurse-patient assignment.
 * **S2** Minimum skill level: 
       A nurse must have a minimum skill level to provide the required care for a patient during each shift of their stay.
       As a consequence, if the skill level of the nurse assigned to their room in a shift is inferior to the minimum level required by the patient, the penalty is equal to the difference between the two skill levels.
@@ -56,7 +51,7 @@ While the IHSP does not explicitly require the assignment of nurses to patients,
         The number of days between an admitted patient’s release date and their actual date of admission should be minimized. 
 * **S8**   Unscheduled patients: The number of optional patients who are not admitted in the current scheduling period should be minimized. 
 
-### Boder data
+### Border data
 
 We assume that some patients are already present in the hospital on the initial day of the scheduling period. We use the term _Occupants_ to refer to these special patients. While these patients contribute to the occupancy of the rooms and to all related constraints, they are already assigned to a specific room and do not require surgery during the scheduling period.
 

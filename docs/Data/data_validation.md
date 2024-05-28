@@ -19,8 +19,9 @@ Both the _public_ and _hidden_ datasets are artificial, and they are generated b
 
 The solution needs to be provided in a single JSON file, and its format is described in [Output](output_format).
 ### Competition dataset
+
 {:.warning}
-> Dataset will the be made available on the 1st of September (starting date of the competition)
+> Dataset available the 1st of September
 
 ### Test dataset
 
