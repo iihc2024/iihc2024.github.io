@@ -1,17 +1,11 @@
 ---
 layout: default
 title: Adjudication
-parent: Competition setting
+parent: Competition
 usemathjax: true
 nav_order: 3
 ---
 <!--TODO: Add adjudication rules-->
-
-We follow the same adjudication procedure of the First and Second International Nurse Rostering Competitions (INRC-I, INRC-II)
-<!--add citation -->
-which in turn has been imported from the Second International
-Timetabling Competition (ITC-2007)<!--add citation -->. It is repeated here
-for the sake of self-containedness.
 
 Let $$m$$ be the total number of instances and $$k$$ the number of
 participants that produce a solution for all $$m$$ instances. Let

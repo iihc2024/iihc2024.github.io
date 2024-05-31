@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Rules
-parent: Competition setting
+parent: Competition
 nav_order: 1
 ---
 

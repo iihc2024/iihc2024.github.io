@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Dates
-parent: Competition setting
+parent: Competition
 nav_order: 2
 ---
 
