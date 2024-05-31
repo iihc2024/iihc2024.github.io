@@ -26,7 +26,7 @@ Therefore, the spirit of the following rules is important.
 **Rule 3**: Participants may use any programming
   language. The use of third-party software is allowed under the
   following restrictions:
-   * it is free software;
+   * it is [open source](https://opensource.org/osd) software;
    * its behavior is (reasonably) documented;
    * it runs under a commonly-used operating system (Unix/Linux, Windows, or MAC OS).
 

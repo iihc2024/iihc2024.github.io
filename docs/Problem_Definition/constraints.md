@@ -55,4 +55,4 @@ While the IHTP does not explicitly require the assignment of nurses to patients,
 
 We assume that some patients are already present in the hospital on the initial day of the scheduling period. We use the term _Occupants_ to refer to these special patients. While these patients contribute to the occupancy of the rooms and to all related constraints, they are already assigned to a specific room and do not require surgery during the scheduling period.
 
-For patients who stay after the end of the scheduling period, no penalties are incurred after the end of the horizon.
+For patients whose stay ends after the end of the scheduling period, no penalties are incurred after the end of the horizon.

@@ -11,6 +11,16 @@
     "adult",
     "elderly"
   ],
+  "weights": {
+    "room_mixed_age": 5,
+    "room_nurse_skill": 1,
+    "continuity_of_care": 1,
+    "nurse_eccessive_workload": 1,
+    "open_operating_theater": 50,
+    "surgeon_transfer": 5,
+    "patient_delay": 10,
+    "unscheduled_optional": 300
+  },
   "occupants": [
     {
       "id": "a0",
@@ -668,15 +678,5 @@
         }
       ]
     }
-  ],
-  "weights": {
-    "room_mixed_age": 5,
-    "room_nurse_skill": 1,
-    "continuity_of_care": 1,
-    "nurse_eccessive_workload": 1,
-    "open_operating_theater": 50,
-    "surgeon_transfer": 5,
-    "patient_delay": 10,
-    "unscheduled_optional": 300
-  }
+  ]
 }
