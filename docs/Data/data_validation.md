@@ -25,4 +25,4 @@ The solution needs to be provided in a single JSON file, and its format is descr
 ### Test dataset
 
 {:.note}
-> Available ASAP
+> [Tests.zip](../json_files/tests.zip)

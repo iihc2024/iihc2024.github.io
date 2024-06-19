@@ -7,10 +7,10 @@ nav_order: 4
 ## Validator
 
 The validator that certifies the quality of a given solution is provided as a C++ source code and should be compiled using, for example, the GNU compiler g++.
-The compilation requires that file `json.hpp` is in the path. 
+The compilation requires that file `json.hpp` (available [here](https://github.com/nlohmann/json/blob/develop/single_include/nlohmann/json.hpp)) is in the path. 
 The validator receives as command line parameters the instance and the solution files, like in the following example.
 
-`./IHSP_Validator.exe toy.json sol-toy.json`
+`./IHTP_Validator.exe toy.json sol-toy.json`
 
 The output delivered by the validator for this solution is the following.
 
