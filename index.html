@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IHTC 2024 - The Integrated Healthcare Timetabling Competition 2024</title>
+	
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/css/ihtc.opage.css" rel="stylesheet">
+	<link href="assets/css/prism.css" rel="stylesheet">
+	
+	<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
+	<script src="https://unpkg.com/@popperjs/core@2"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/js/ihtc.opage.js" type="text/javascript"></script>	
+	<script src="assets/js/prism.js" type="text/javascript"></script>	
+</head>
+
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container d-flex justify-content-between">
+        <a class="navbar-brand" href="#">IHTC 2024</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#section1">Home</a>
+                </li>
+				<li class="nav-item">
+                    <a class="nav-link" href="#section1a">Organizers</a>
+                </li>
+				<li class="nav-item">
+                    <a class="nav-link" href="#section1b">Sponsors</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section2">Dates</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section3">Instances</a>
+                </li>
+				<li class="nav-item">
+                    <a class="nav-link" href="#section4">Validator</a>
+                </li>
+				<li class="nav-item">
+                    <a class="nav-link" href="#section5">File formats</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section6">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Content Sections -->
+<div class="container">
+    <section id="section1" class="my-5">
+        <p>
+			Building on the success of the earlier timetabling competitions, the <b>Integrated Healthcare Timetabling Competition 2024</b> intends to stimulate research focusing on the challenges of integrated optimization problems.
+			The competition will officially begin 1st September 2024, and will run untill 31 March 2025.
+			The award ceremony will take place during EURO 2025 on 22-25 June 2025 in Leeds (UK).			
+		</p>
+		<p>The considered optimization problem integrates three critical problems in healthcare: surgical case planning, patient admission scheduling and nurse-to-room assignment. <b>The complete problem description and an overview of the competition's rules can be found <a href="assets/files/ihtc2024_problem_specification.pdf" target="_blank">here</a>.</b></p>
+
+		<p>The top three competitors will receive a cash prize as well as a free registration to EURO 2025.</p>
+
+	</section>
+	<section id="section1a" class="my-5">
+        <h2>Organizers</h2>	
+		<p>The competition is organized by IOLAB from the University of Udine (Italy) and the CODeS research group from KU Leuven (Belgium).</p>
+		<div class="row">
+            <div class="col-md-3 text-center">
+                <figure class="figure">
+                    <a href="https://iolab.uniud.it/" target="_blank">
+						<img src="assets/images/logo_iolab.png" class="figure-img img-fluid" style="width: auto; height: 65px;" alt="IOAB">
+					</a>
+                </figure>
+            </div>
+			<div class="col-md-3 text-center">
+                <figure class="figure">
+                    <a href="https://www.uniud.it/" target="_blank">
+						<img src="assets/images/logo_udine.png" class="figure-img img-fluid" style="width: auto; height: 65px;" alt="University of Udine">
+					</a>
+                </figure>
+            </div>
+			<div class="col-md-3 text-center">
+                <figure class="figure">
+					<a href="https://set.kuleuven.be/codes" target="_blank">
+						<img src="assets/images/logo_codes.png" class="figure-img img-fluid" style="width: auto; height: 65px;" alt="CODeS KU Leuven">
+					</a>
+                </figure>
+            </div>	
+            <div class="col-md-3 text-center">
+                <figure class="figure">
+					<a href="https://www.kuleuven.be" target="_blank">
+						<img src="assets/images/logo_kul.png" class="figure-img img-fluid" style="width: auto; height: 65px;" alt="KU Leuven">
+					</a>
+                </figure>
+            </div>		
+        </div>
+	</section>
+	<section id="section1b" class="my-5">
+        <h2>Sponsors</h2>
+		<p>The competition is supported by the following organizations:</p>
+		<div class="row">
+            <div class="col-md-6 text-center">
+                <figure class="figure">
+					<a href="https://patat.cs.kuleuven.be/" target="_blank">
+						<img src="assets/images/logo_patat.png" class="figure-img img-fluid" style="width: auto; height: 120px;" alt="EURO WG PATAT">
+					</a>
+                </figure>
+            </div>
+            <div class="col-md-6 text-center">
+                <figure class="figure">
+					<a href="https://orahs.di.unito.it/" target="_blank">
+						<img src="assets/images/logo_orahs.png" class="figure-img img-fluid" style="width: auto; height: 120px;" alt="EURO WG ORAHS">
+					</a>
+                </figure>
+            </div>			
+        </div>
+    </section>
+    <section id="section2" class="my-5">
+        <h2>Dates</h2>
+		<ul>
+            <li>September 1, 2024			
+				<ul>
+					<li>Competition start</li>
+					<li>Public dataset is available</li>
+				</ul>
+			</li>
+            <li class="with-margin">March 1, 2025			
+				<ul>
+					<li>Submission of best solutions for the public instances</li>
+				</ul>
+			</li>
+			<li class="with-margin">April 1, 2025			
+				<ul>
+					<li>Announcement of the five finalists</li>
+					<li>Request of the finalists' code</li>
+					<li>Evaluation on the hidden dataset</li>
+				</ul>
+			</li>
+			<li class="with-margin">May 1, 2025			
+				<ul>
+					<li>Announcement of results to the finalists</li>
+				</ul>
+			</li>
+			<li class="with-margin">June 22-25 1, 2025			
+				<ul>
+					<li>Award ceremony at EURO 2025</li>
+				</ul>
+			</li>
+        </ul>
+    </section>
+    <section id="section3" class="my-5">
+        <h2>Instances</h2>
+        <p>Instances are provided in JSON format with the fixed structure that is described in detail in the <a href="#" target="_blank">specification document</a>. Each instance is contained in a single file. We provide a public dataset composed of 30 instances, named i01, … i30, with a scheduling period ranging from 2 to 4 weeks, and a number of patients ranging from about 50 to about 500. In addition, we provide 5 test instances, test01, … test05 for testing and debugging purposes. For the test dataset, we also provide a solution for each specific instance.</p>
+		
+		<h5>Test dataset</h5>
+		
+		<p>The test dataset can be downloaded <a href="assets/files/ihtc2024_test_dataset.zip" target="_blank">here</a>. Solutions for these instances can be found <a href="#" target="_blank">here</a>.</p>
+		
+		<h5>Public dataset</h5>
+		
+		<div class="alert alert-danger" role="alert">
+		  Available on September 1, 2024.
+		</div>
+		
+    </section>
+	<section id="section4" class="my-5">
+        <h2>Validator</h2>
+        <p>The validator that certifies the quality of a given solution is provided as <a href="#" target="_blank">a <span style="font-family: monospace;">C++</span> source code</a> and should be compiled using, for example, the GNU compiler <span style="font-family: monospace;">g++</span>. The compilation requires that file <code>json.hpp</code> (available <a href="https://github.com/nlohmann/json/blob/develop/single_include/nlohmann/json.hpp" target="_blank">here</a>) is in the path. The validator receives as command line parameters the instance and the solution files, as shown in the following example:</p>
+		
+		<p><code>./IHTP_Validator.exe toy.json sol-toy.json</code></p>
+		
+		<p>To get additional details on constraint violations and individual objectives, the keyword <code>verbose</code> can be added as a third parameter.</p>
+		
+		
+    </section>
+	<section id="section5" class="my-5">
+        <h2>File formats</h2>
+		<h5>Problem instance files</h5>
+        <p>The problem instances are provided as json files. The header section in each file specifies general information such the total number of <span style="font-family: monospace;">days</span> in the scheduling period, the number of different nurse <span style="font-family: monospace;">skill levels</span>, the list of types of daily shifts <span style="font-family: monospace;">shift_types</span>, the enumeration of different <span style="font-family: monospace;">age groups</span> considered in the scheduling and the instance-specific weight set.</p>
+		<pre><code class="language-json">		
+		"days": 7,
+		"skill_levels": 3,
+		"shift_types": [
+			"early",
+			"late",
+			"night"
+		],
+		"age_groups": [
+			"infant",
+			"adult",
+			"elderly"
+		],
+		"weights": {
+			"room_mixed_age": 5,
+			"room_nurse_skill": 1,
+			"continuity_of_care": 1,
+			"nurse_eccessive_workload": 1,
+			"open_operating_theater": 50,
+			"surgeon_transfer": 5,
+			"patient_delay": 10,
+			"unscheduled_optional": 300
+		},
+		...		
+		</code></pre>
+		
+		<p>The next section presents the list of occupants, each characterized by a unique id along with their gender group and age_group as well as the duration of their stay length_of_stay. Two arrays indicate the workload_produced, and the skill_level_required for each shift of their stay. Additionally, each occupant is linked to a room_id, specifying their assigned room.</p>
+		
+		<pre><code class="language-json">
+		"occupants": [
+			{
+				"id": "a0",
+				"gender": "A",
+				"age_group": "elderly",
+				"length_of_stay": 2,
+				"workload_produced": [2, 1, 1, 2, 3, 2],
+				"skill_level_required": [1, 2, 0, 0, 0, 0],
+				"room_id": "r21"
+			},
+			...
+		]
+		</code></pre>
+		
+		<p>Each patient, as per occupant, is identified by an id, assigned a gender group, an age_group, and their length_of_stay in the hospital. Information regarding the workload_produced, and the skill_level_required for each shift of their stay is also provided.</p>
+
+		<p>The patient section includes additional details pertaining to scheduled surgeries. The "mandatory" field denotes whether a patient is required to be scheduled must be scheduled within the given period, while surgery_release_day indicates the earliest day for surgery (and hospital admission). For mandatory patients, the field surgery_due_day signifies the latest possible surgery date, while optional patients do not have this attribute. Further surgery details include the surgery_duration (in minutes) and the pre-assigned surgeon surgeon (surgeon_id).</p>
+
+		<p>Additionally, each patient is accompanied by a list of incompatible_room_ids which specifies all the rooms the patient cannot be assigned to.</p>
+		
+		<pre><code class="language-json">
+		"patients": [
+			{
+				"id": "p5",
+				"mandatory": true,
+				"gender": "A",
+				"age_group": "adult",
+				"length_of_stay": 2,
+				"surgery_release_day": 1,
+				"surgery_due_day": 4,
+				"surgery_duration": 30,
+				"surgeon_id": "s0",
+				"incompatible_room_ids": [
+					r1"
+				],
+				"workload_produced": [3, 2, 1, 1, 1, 1],
+				"skill_level_required": [0, 2, 0, 2, 1, 0]
+			}
+			...
+		 ]
+		</code></pre>
+		
+		<p>The nurses section comprises a list of individual nurses, each with their unique identifier id, skill_level, and the list of their working shifts. Each working shift includes the day of the shift, the shift type (shift), and the maximum workload max_load allowed for that shift.</p>
+		
+		<pre><code class="language-json">
+		"nurses": [
+			{
+				"id": "n00",
+				"skill_level": 0,
+				"working_shifts": [
+					{
+						"day": 0,
+						"shift": "early",
+						"max_load": 10
+					},
+					{
+						"day": 1,
+						"shift": "night",
+						"max_load": 5
+					},
+					...
+				]
+			},
+			...
+		]
+		</code></pre>
+		
+		<p>Each surgeon has an id and a max_surgery_time list specifying their availability (in minutes) on each day of the scheduling period. Similarly, each operating theater is identified by an id accompanied by an availabilitylist indicating the theater’s availability (in minutes) for each day of the scheduling period. Finally, to each room is associated an id and a capacity (constant during the entire scheduling period).</p>
+		
+		
+		<pre><code class="language-json">
+		"surgeons": [
+			{
+				"id": "s0",
+				"max_surgery_time": [0, 360, 0, 600, 480, 0, 0, 600]
+			},
+			...
+		  ],
+		"operating_theaters": [
+			{
+				"id": "t0",
+				"availability": [0, 600, 720, 600, 600, 720, 720]
+			},
+			...
+		],
+		"rooms": [
+			{
+				"id": "r0",
+				"capacity": 2
+			},
+		   ...
+		]
+		</code></pre>
+		
+		<h5>Solution files</h5>
+		<p>The solution file format is divided into two sections: one about patients and one about nurses.</p>
+
+		<p>The patient section comprises of the list of admitted patients. For each admitted patient it’s necessary to state their <span style="font-family: monospace;">id</span> their <span style="font-family: monospace;">admission_day</span> as well as the ids representing the room and operating theater they have been assigned to. Non-admitted patients can be either omitted from the solution or be present with the syntax <span style="font-family: monospace;">"admission_day": "none"</span>.</p>
+
+		<p>The nurse section should contain the list of <span style="font-family: monospace;">assignments</span> for each nurse. Each assignment should include the <span style="font-family: monospace;">day</span> and <span style="font-family: monospace;">shift</span> of the working shift and the list of rooms covered by the nurse. If no rooms are covered, the assignment may be omitted or the list of rooms may be empty. If a nurse does not cover any rooms in any of their work shifts, they can be omitted completely.</p>
+		
+		<pre><code class="language-json">
+		{
+			"patients": [
+				{
+					"id": "p00",
+					"admission_day": 4,
+					"room": "r3",
+					"operating_theater": "t0"
+				},
+				{
+					"id": "p02",
+					"admission_day": "none"
+				},
+				...
+			],
+			"nurses": [
+				{
+					"id": "n00",
+					"assignments": [
+						{
+							"day": 0,
+							"shift": "early",
+							"rooms": ["r1", "r4"]
+						},
+						{
+							"day": 1,
+							"shift": "night",
+							"rooms": ["r4", "r5"]
+						},
+						{
+							"day": 2,
+							"shift": "night",
+							"rooms": []
+						},
+						...
+					]
+				},
+				...
+			]
+		}
+		</code></pre>
+		
+    </section>
+    <section id="section6" class="my-5">
+        <h2>Contact</h2>
+        <p>For any questions or comments, please contact us the organizers using <a href="mailto:ihtc2024@uniud.it?subject=ihtc2024">this email address</a>.</p>
+    </section>
+</div>
+
+</body>
+</html>

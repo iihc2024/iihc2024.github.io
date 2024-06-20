@@ -1,0 +1,38 @@
+/* Add some padding to the top of the container to offset the fixed navbar */
+body {
+	padding-top: 56px;
+	scroll-behavior: smooth; /* Enable smooth scrolling */
+}
+
+/* Centering the nav items */
+.navbar-nav {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+}
+
+/* Offset for section headers to avoid being hidden under the navbar */
+section::before {
+	content: "";
+	display: block;
+	height: 56px; /* Height of the navbar */
+	margin-top: -56px; /* Negative margin to offset the height */
+	visibility: hidden;
+}
+
+p {
+	font-size: 18px; 
+}
+
+li {
+	font-size: 18px;
+}
+
+code[class="language-json"] {
+        font-size: 14px !important;
+}
+
+li.with-margin{
+	margin-top: 1em;
+  }
+
