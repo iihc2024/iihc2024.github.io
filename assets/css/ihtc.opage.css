@@ -11,6 +11,12 @@ body {
 	justify-content: center;
 }
 
+@media screen and (max-width: 480px) {
+	.navbar-nav {
+	  display:none;
+	}
+ }
+
 /* Offset for section headers to avoid being hidden under the navbar */
 section::before {
 	content: "";
