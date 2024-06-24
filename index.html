@@ -29,13 +29,7 @@
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link" href="#section1">Home</a>
-                </li>
-				<li class="nav-item">
-                    <a class="nav-link" href="#section1a">Organizers</a>
-                </li>
-				<li class="nav-item">
-                    <a class="nav-link" href="#section1b">Sponsors</a>
-                </li>
+                </li>				
                 <li class="nav-item">
                     <a class="nav-link" href="#section2">Dates</a>
                 </li>
@@ -47,6 +41,12 @@
                 </li>
 				<li class="nav-item">
                     <a class="nav-link" href="#section5">File formats</a>
+                </li>
+				<li class="nav-item">
+                    <a class="nav-link" href="#section1a">Organizers</a>
+                </li>
+				<li class="nav-item">
+                    <a class="nav-link" href="#section1b">Sponsors</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#section6">Contact</a>
@@ -69,60 +69,6 @@
 		<p>The top three competitors will receive a cash prize as well as a free registration to EURO 2025.</p>
 
 	</section>
-	<section id="section1a" class="my-5">
-        <h2>Organizers</h2>	
-		<p>The competition is organized by IOLAB from the University of Udine (Italy) and the CODeS research group from KU Leuven (Belgium).</p>
-		<div class="row">
-            <div class="col-md-3 text-center">
-                <figure class="figure">
-                    <a href="https://iolab.uniud.it/" target="_blank">
-						<img src="assets/images/logo_iolab.png" class="figure-img img-fluid" style="width: auto; height: 65px;" alt="IOAB">
-					</a>
-                </figure>
-            </div>
-			<div class="col-md-3 text-center">
-                <figure class="figure">
-                    <a href="https://www.uniud.it/" target="_blank">
-						<img src="assets/images/logo_udine.png" class="figure-img img-fluid" style="width: auto; height: 65px;" alt="University of Udine">
-					</a>
-                </figure>
-            </div>
-			<div class="col-md-3 text-center">
-                <figure class="figure">
-					<a href="https://numa.cs.kuleuven.be/research/combinatorial-optimization" target="_blank">
-						<img src="assets/images/logo_codes.png" class="figure-img img-fluid" style="width: auto; height: 65px;" alt="CODeS KU Leuven">
-					</a>
-                </figure>
-            </div>	
-            <div class="col-md-3 text-center">
-                <figure class="figure">
-					<a href="https://www.kuleuven.be" target="_blank">
-						<img src="assets/images/logo_kul.png" class="figure-img img-fluid" style="width: auto; height: 65px;" alt="KU Leuven">
-					</a>
-                </figure>
-            </div>		
-        </div>
-	</section>
-	<section id="section1b" class="my-5">
-        <h2>Sponsors</h2>
-		<p>The competition is supported by the following organizations:</p>
-		<div class="row">
-            <div class="col-md-6 text-center">
-                <figure class="figure">
-					<a href="https://patat.cs.kuleuven.be/" target="_blank">
-						<img src="assets/images/logo_patat.png" class="figure-img img-fluid" style="width: auto; height: 120px;" alt="EURO WG PATAT">
-					</a>
-                </figure>
-            </div>
-            <div class="col-md-6 text-center">
-                <figure class="figure">
-					<a href="https://orahs.di.unito.it/" target="_blank">
-						<img src="assets/images/logo_orahs.png" class="figure-img img-fluid" style="width: auto; height: 120px;" alt="EURO WG ORAHS">
-					</a>
-                </figure>
-            </div>			
-        </div>
-    </section>
     <section id="section2" class="my-5">
         <h2>Dates</h2>
 		<ul>
@@ -184,7 +130,7 @@
 	<section id="section5" class="my-5">
         <h2>File formats</h2>
 		<h5>Problem instance files</h5>
-        <p>The problem instances are provided as json files. The header section in each file specifies general information such the total number of <span style="font-family: monospace;">days</span> in the scheduling period, the number of different nurse <span style="font-family: monospace;">skill levels</span>, the list of types of daily shifts <span style="font-family: monospace;">shift_types</span>, the enumeration of different <span style="font-family: monospace;">age groups</span> considered in the scheduling and the instance-specific weight set.</p>
+        <p>The problem instances are provided as json files. A small toy example can be found <a href="assets/files/toy.json" target="_blank">here</a>. The header section in each file specifies general information such the total number of <span style="font-family: monospace;">days</span> in the scheduling period, the number of different nurse <span style="font-family: monospace;">skill levels</span>, the list of types of daily shifts <span style="font-family: monospace;">shift_types</span>, the enumeration of different <span style="font-family: monospace;">age groups</span> considered in the scheduling and the instance-specific weight set.</p>
 		<pre><code class="language-json">		
 		"days": 7,
 		"skill_levels": 3,
@@ -309,7 +255,7 @@
 		</code></pre>
 		
 		<h5>Solution files</h5>
-		<p>The solution file format is divided into two sections: one about patients and one about nurses.</p>
+		<p>The solution file format is divided into two sections: one about patients and one about nurses. A small toy example can be found <a href="assets/files/toy_solution.json" target="_blank">here</a>.</p>
 
 		<p>The patient section comprises of the list of admitted patients. For each admitted patient it’s necessary to state their <span style="font-family: monospace;">id</span> their <span style="font-family: monospace;">admission_day</span> as well as the ids representing the room and operating theater they have been assigned to. Non-admitted patients can be either omitted from the solution or be present with the syntax <span style="font-family: monospace;">"admission_day": "none"</span>.</p>
 
@@ -355,8 +301,70 @@
 				...
 			]
 		}
-		</code></pre>
-		
+		</code></pre>		
+    </section>
+	<section id="section1a" class="my-5">
+        <h2>Organizers</h2>	
+		<p>The organization team consists of the following people:</p>
+		<ul>
+			<li>Sara Ceschia (University of Udine)</li>
+			<li>Roberto Maria Rosati (University of Udine)</li>
+			<li>Andrea Schaerf (University of Udine)</li>
+			<li>Pieter Smet (KU Leuven)</li>
+			<li>Greet Vanden Berghe (KU Leuven)</li>
+			<li>Eugenia Zanazzo (University of Udine) </li>
+		</ul>
+		<br />
+		<div class="row">
+            <div class="col-md-3 text-center">
+                <figure class="figure">
+                    <a href="https://iolab.uniud.it/" target="_blank">
+						<img src="assets/images/logo_iolab.png" class="figure-img img-fluid" style="width: auto; height: 65px;" alt="IOAB">
+					</a>
+                </figure>
+            </div>
+			<div class="col-md-3 text-center">
+                <figure class="figure">
+                    <a href="https://www.uniud.it/" target="_blank">
+						<img src="assets/images/logo_udine.png" class="figure-img img-fluid" style="width: auto; height: 65px;" alt="University of Udine">
+					</a>
+                </figure>
+            </div>
+			<div class="col-md-3 text-center">
+                <figure class="figure">
+					<a href="https://numa.cs.kuleuven.be/research/combinatorial-optimization" target="_blank">
+						<img src="assets/images/logo_codes.png" class="figure-img img-fluid" style="width: auto; height: 65px;" alt="CODeS KU Leuven">
+					</a>
+                </figure>
+            </div>	
+            <div class="col-md-3 text-center">
+                <figure class="figure">
+					<a href="https://www.kuleuven.be" target="_blank">
+						<img src="assets/images/logo_kul.png" class="figure-img img-fluid" style="width: auto; height: 65px;" alt="KU Leuven">
+					</a>
+                </figure>
+            </div>		
+        </div>
+	</section>
+	<section id="section1b" class="my-5">
+        <h2>Sponsors</h2>
+		<p>The competition is supported by the following organizations:</p>
+		<div class="row">
+            <div class="col-md-6 text-center">
+                <figure class="figure">
+					<a href="https://patat.cs.kuleuven.be/" target="_blank">
+						<img src="assets/images/logo_patat.png" class="figure-img img-fluid" style="width: auto; height: 120px;" alt="EURO WG PATAT">
+					</a>
+                </figure>
+            </div>
+            <div class="col-md-6 text-center">
+                <figure class="figure">
+					<a href="https://orahs.di.unito.it/" target="_blank">
+						<img src="assets/images/logo_orahs.png" class="figure-img img-fluid" style="width: auto; height: 120px;" alt="EURO WG ORAHS">
+					</a>
+                </figure>
+            </div>			
+        </div>
     </section>
     <section id="section6" class="my-5">
         <h2>Contact</h2>
